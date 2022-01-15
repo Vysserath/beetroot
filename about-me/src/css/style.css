@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+
+.about-me {
+    margin: 28px auto 0;
+    width: 480px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.about-me-text {
+    padding-bottom: 50px;
+}
