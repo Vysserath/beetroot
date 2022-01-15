@@ -18,7 +18,8 @@ h2 {
 
 .about-me {
     margin: 0 auto ;
-    width: 480px;
+    width: 100%;
+    max-width: 480px;
     text-align: center;
     font-size: 18px;
 }
