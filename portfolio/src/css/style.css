@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #070707;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+h1 {
+    font-size: 48px;
+    line-height: 64px;
+    margin: 0 0 40px;
+}
+
+h2 {
+    margin-bottom: 28px;
+    text-align: center;
+    font-size: 34px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.header .container {
+    padding: 23px 0 0;
+}
+
+.header .border-shadow {
+    display: block;
+    width: 100%;
+    background-color: #828282;
+    height: 1px;
+    box-shadow: 0 4px 4px 1px rgb(130 130 130 / 30%);
+}
+
+.nav-list {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-link {
+    font-size: 18px;
+    line-height: 25px;
+    color: #828282;
+    text-shadow: 2px 4px 4px rgb(130 130 130 / 50%);
+}
+
+.nav-link.active {
+    color: #070707;
+}
+
+.hero-section {
+    padding: 34px 0 100px;
+}
+
+.hero-section .image-holder img {
+    width: 100%;
+}
+.about-me-section {
+    background-color: #F6F6F6;
+    padding: 100px 0 50px;
+}
+
+.about-me {
+    margin: 0 auto ;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.about-me p {
+    margin-bottom: 50px;
+}
+
+.skills-section {
+    padding: 100px 0 83px;
+}
+
+.skills-section h2 {
+    margin-bottom: 40px;
+}
+
+.skills-section p {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 78px;
+}
+
+.skills-image-holder img{
+    display: inline-block;
+}
+
+.skills-list {
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+}
+.skills-list li {
+    display: inline-block;
+    padding-right: 90px;
+}
+
+.skills-list li:nth-child(4) {
+    padding-right: 0px;
+}
+
+.stars-images img {
+    display: inline-block;
+    padding: 0 4px;
+}
+
+.skills-list-text {
+    display: block;
+    margin: 23px 0 60px;
+}
+
+.portfolio-section {
+    background-color: #F6F6F6;
+    padding: 118px 0 100px;
+}
+
+.portfolio-section h2 {
+    margin-bottom: 67px;
+}
+
+.portfolio-section p {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.portfolio-section a{
+    color: #070707;
+}
+.online-store-img-holder {
+    margin-bottom: 15px;
+}
+
+.reebok-img-holder {
+    margin: 128px 0 8px;
+}
+
+.braun-img-holder {
+    margin: 136px 0 1px;
+}
