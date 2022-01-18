@@ -147,14 +147,12 @@ img {
     margin-bottom: 67px;
 }
 
-.portfolio-section p {
+.portfolio-section a{
+    display: block;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
     text-decoration-line: underline;
-}
-
-.portfolio-section a{
     color: #070707;
 }
 .online-store-img-holder {
