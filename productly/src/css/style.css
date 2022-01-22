@@ -7,11 +7,6 @@ body{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;}
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
 a {
     text-decoration: none;
 }
@@ -53,14 +48,14 @@ h1 {
 }
 
 .nav-list {
-    margin: 0 60px 0 -20px;
+    margin: 0 60px 0 -12px;
     padding: 10px 0;
     float: left;
 }
 
 .nav-list li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 12px;
 }
 
 .nav-buttons {
@@ -71,7 +66,7 @@ h1 {
 
 .nav-buttons li {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 7px;
 }
 
 .nav-buttons button {
