@@ -44,7 +44,7 @@ h1 {
 
 .logo {
     float: left;
-    max-width: 100px;
+    max-width: 185px;
 }
 
 .nav {
@@ -53,7 +53,6 @@ h1 {
 }
 
 .nav-list {
-    list-style: none;
     margin: 0 60px 0 -20px;
     padding: 10px 0;
     float: left;
@@ -64,19 +63,18 @@ h1 {
     padding: 0 20px;
 }
 
-.button-list {
-    list-style: none;
+.nav-buttons {
     margin: 0 -10px;
     padding: 0;
     float: right;
 }
 
-.button-list li {
+.nav-buttons li {
     display: inline-block;
     padding: 0 10px;
 }
 
-.button-list button {
+.nav-buttons button {
     display: block;
     padding: 10px 20px;
     border: none;
