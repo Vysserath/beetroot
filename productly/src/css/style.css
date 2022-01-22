@@ -2,12 +2,23 @@
     padding: 0;
     margin: 0;
 }
+
 body{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;}
 
-a {text-decoration: none;}
-ul {list-style: none;}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
 
 h1 {
     font-size: 44px;
@@ -17,49 +28,61 @@ h1 {
 }
 
 .header {
-    padding: 35px 0 17px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-.header div{
-    display: inline-block;
-}
-
-.logo-holder {
-    max-width: 185px;
-    width: 100%;
-}
-
-.navigation {
-    margin: 0 25px 0 320px;
-}
-
-.navigation li {
-    display: inline-block;
-    margin-right: 25px;
-    font-size: 14px;
-    line-height: 28px;
-}
-
-.navigation li a {
-    color: #2F281E;
-}
-
-.buttons-holder button {
-    padding: 10px 20px;
-    border: none;
-    background: #FF9900;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: white;
+    padding: 20px 0;
 }
 
 .container {
-    max-width: 1125px;
-    width: 100%;
+    padding: 0 15px;
     margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+}
+
+.header .container {
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    max-width: 100px;
+}
+
+.nav {
+    float: right;
+    overflow: hidden;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0 60px 0 -20px;
+    padding: 10px 0;
+    float: left;
+}
+
+.nav-list li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.button-list {
+    list-style: none;
+    margin: 0 -10px;
+    padding: 0;
+    float: right;
+}
+
+.button-list li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.button-list button {
+    display: block;
+    padding: 10px 20px;
+    border: none;
+    background-color: #FF9900;
+    border-radius: 4px;
+    color: #fff;
 }
 
 .text-block {
