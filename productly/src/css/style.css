@@ -46,8 +46,7 @@ h1 {
 }
 
 .buttons-holder button {
-    width: 100px;
-    height: 46px;
+    padding: 10px 20px;
     border: none;
     background: #FF9900;
     border-radius: 4px;
@@ -78,8 +77,7 @@ h1 {
 }
 
 .text-block-button {
-    width: 175px;
-    height: 53px;
+    padding: 15px 40px;
     background: #FF9900;
     border: none;
     border-radius: 4px;
