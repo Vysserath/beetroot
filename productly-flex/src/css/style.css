@@ -130,6 +130,7 @@ h1 {
     max-width: 14px;
     padding-right: 5px;
 }
+
 .img-holder {
     max-width: 605px;
     margin-left: -3px;
@@ -231,7 +232,8 @@ button:hover {
 }
 
 .footer-input {
-    background: #FFFFFF;
+    max-width: 325px;
+    width: 100%;
     border: 1px solid #BCD0E5;
     box-sizing: border-box;
     border-radius: 4px;
