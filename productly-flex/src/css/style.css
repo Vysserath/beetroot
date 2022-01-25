@@ -126,6 +126,10 @@ h1 {
     text-decoration: underline;
 }
 
+.button-img {
+    max-width: 14px;
+    padding-right: 5px;
+}
 .img-holder {
     max-width: 605px;
     margin-left: -3px;
