@@ -9,6 +9,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #2F281E;
 }
 
 ul {
@@ -77,10 +78,11 @@ h1 {
 
 .nav-buttons button {
     display: block;
-    padding: 10px 20px;
-    border: none;
     background-color: #FF9900;
+    padding: 10px 20px;
+    border: 1px solid #FF9900;
     border-radius: 4px;
+    font-weight: 600;
     color: #fff;
 }
 
@@ -101,7 +103,7 @@ h1 {
 .text-block-button {
     padding: 15px 40px;
     background: #FF9900;
-    border: none;
+    border: 1px solid #FF9900;
     border-radius: 4px;
     font-size: 16px;
     line-height: 24px;
@@ -132,10 +134,8 @@ button:hover {
     color: #173A56;
 }
 
-.second-section {
-}
-
 .second-section h2 {
+    color: #2F281E;
     text-align: center;
     font-size: 36px;
     line-height: 54px;
@@ -151,4 +151,93 @@ button:hover {
 
 .list-flex-item img,strong,span {
     display: block;
+}
+
+.list-flex-item img {
+    margin-bottom: 30px;
+}
+
+.list-flex-item strong{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #2F281E;
+    margin-bottom: 13px;
+}
+
+.list-flex-item span {
+    max-width: 240px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+
+.list-holder {
+    margin-bottom: 34px;
+}
+
+.second-section-button {
+    display: block;
+    padding: 15px 33px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF; 
+    font-weight: bold;
+    background: #FF9900;
+    border-radius: 4px;
+    border: 1px solid #FF9900;
+    margin: 0 auto 90px;
+}
+
+.footer-line {
+    display: block;
+    width: 100%;
+    background-color: rgba(188, 208, 229, 0.496913);
+    height: 1px;
+    margin-bottom: 120px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+}
+
+.footer-container span {
+    font-size: 20px;
+    line-height: 30px;
+    color: #2F281E;
+    margin-bottom: 35px;
+    max-width: 280px;
+}
+
+.footer-list li {
+    margin-bottom: 12px;
+}
+
+.footer-list li a {
+    color: #544837;
+}
+
+.footer-input {
+    background: #FFFFFF;
+    border: 1px solid #BCD0E5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 21px;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 10px 15px;
+}
+
+.footer-button {
+    display: block;
+    padding: 8px 15px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF; 
+    font-weight: bold;
+    background: #FF9900;
+    border-radius: 4px;
+    border: 1px solid #FF9900;
 }
