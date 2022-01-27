@@ -11,6 +11,10 @@ body {
 a {
     color: black;
     text-decoration: none;
+
+}
+
+.nav-links {
     font-size: 20px;
     line-height: 23px;
 }
