@@ -4,148 +4,249 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productly</title>
-    <link rel="stylesheet" href="src/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Productly</title>
 </head>
+
 <body>
     <header class="header">
-        <div class="container-flex">
-            <div class="logo">
+        <div class="container container-flex">
+            <div class="header__logo-holder">
                 <a href="#">
-                    <img src="src/img/Logo.jpg" alt="logo">
+                    <img src="src/img/logo.jpg" alt="logo">
                 </a>
             </div>
             <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Customers</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Resources</a></li>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#">Product</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Customers</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Resources</a>
+                    </li>
                 </ul>
-                <ul class="nav-buttons">
-                    <li><button>Sign In</button></li>
-                    <li><button>Sign Up</button></li>
+                <ul class="nav__buttons">
+                    <li>
+                        <a class="button button_nav-white">Sign In</a>
+                    </li>
+                    <li>
+                        <a class="button button_nav-orange">Sign Up</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="first-section">
-        <div class="container">
-            <div class="text-block">
-                <h1>The Design Thinking superpowers</h1>
-                <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
-                <div class="link-holder">
-                    <button class="text-block-button">Get started</button>
-                    <a href="#"><img class="button-img" src="src/img/triangle.svg" alt="img">Watch the Video</a>
+    <main class="main">
+        <section class="design-thinking">
+            <div class="container container-flex">
+                <div class="text-block">
+                    <div class="text-block__title-holder">
+                        <h1 class="text-block__title text-block__title_big">The Design Thinking superpowers</h1>
+                    </div>
+                    <div class="text-block__text-holder text-block__text-holder_big">
+                        <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+                    </div>
+                    <div class="text-block__link-holder">
+                        <a href="#" class="button text-block_button">Get started</a>
+                        <a href="#" class="text-block__link-item">Watch the Video</a>
+                    </div>
+                </div>
+                <div class="img-block">
+                    <img src="src/img/design-thinking.jpg" alt="img">
                 </div>
             </div>
-            <div class="img-holder">
-                <img src="src/img/first_section_img.jpg" alt="img">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="second-section">
-        <div class="container">
-            <h2>We design tools to unveil your superpowers</h2>
-            <div class="list-holder">
-                <ul class="list-flex">
-                    <li class="list-flex-item">
-                        <img src="src/img/icon_1.svg" alt="img">
-                        <strong>First click tests</strong>
-                        <span>While most people enjoy casino gambling,</span>
-                    </li>
-                    <li class="list-flex-item">
-                        <img src="src/img/icon_2.svg" alt="img">
-                        <strong>Design surveys</strong>
-                        <span>Sports betting, lottery and bingo playing for the fun</span>
-                    </li>
-                    <li class="list-flex-item">
-                        <img src="src/img/icon_3.svg" alt="img">
-                        <strong>Preference tests</strong>
-                        <span>The Myspace page defines the individual.</span>
-                    </li>
-                    <li class="list-flex-item">
-                        <img src="src/img/icon_4.svg" alt="img">
-                        <strong>Five second tests</strong>
-                        <span>Personal choices and the overall personality of the person. </span>
-                    </li>
-                </ul>
+        <section class="design-tools">
+            <div class="container">
+                <div class="design-tools__title-holder">
+                    <h1 class="design-tools__title">We design tools to unveil your superpowers</h1>
+                </div>
+                <div class="container-flex">
+                    <div class="container-flex__item">
+                        <div class="container-flex__img-holder">
+                            <img src="src/img/design-tools_1.svg" alt="img_1">
+                        </div>
+                        <div class="container-flex__text-holder">
+                            <strong>First click tests</strong>
+                            <p>While most people enjoy casino gambling.</p>
+                        </div>
+                    </div>
+                    <div class="container-flex__item">
+                        <div class="container-flex__img-holder">
+                            <img src="src/img/design-tools_2.svg" alt="img_2">
+                        </div>
+                        <div class="container-flex__text-holder">
+                            <strong>Design surveys</strong>
+                            <p>Sports betting, lottery and bingo playing for the fun.</p>
+                        </div>
+                    </div>                    
+                    <div class="container-flex__item">
+                        <div class="container-flex__img-holder">
+                            <img src="src/img/design-tools_3.svg" alt="img_3">
+                        </div>
+                        <div class="container-flex__text-holder">
+                            <strong>Preference tests</strong>
+                            <p>The Myspace page defines the individual.</p>
+                        </div>
+                    </div>                    
+                    <div class="container-flex__item">
+                        <div class="container-flex__img-holder">
+                            <img src="src/img/design-tools_4.svg" alt="img_4">
+                        </div>
+                        <div class="container-flex__text-holder">
+                            <strong>Five second tests</strong>
+                            <p>Personal choices and the overall personality of the person.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="design-tools__button-holder">
+                    <a href="" class="design-tools__button button">SIGN UP NOW</a>
+                </div>
             </div>
-            <button class="second-section-button">SIGN UP NOW</button>
-        </div>
-    </section>
+        </section>
 
-    <section class="product-managers">
-        <div class="container-flex">
-            <div class="product-managers__img-block">
-                <img src="src/img/product-managers.jpg" alt="img">
+        <section class="design-professionals">
+            <div class="container container-flex">
+                <div class="text-block">
+                    <div class="text-block__title-holder">
+                        <span class="text-block__subtitle">Effortless Validation for</span>
+                        <h1 class="text-block__title">Design Professionals</h1>
+                    </div>
+                    <div class="text-block__text-holder">
+                        <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.</p>
+                        <strong>Accessory makers</strong>
+                        <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun.</p>
+                        <strong>Alterationists</strong>
+                        <p>If you are looking for a new way to promote your business that won’t cost you more money.</p>
+                        <strong>Custom Design designers</strong>
+                        <p>If you are looking for a new way to promote your business that won’t cost you more money.</p>
+                    </div>
+                </div>
+                <div class="img-block">
+                    <img src="src/img/design-professionals.jpg" alt="img">
+                </div>
             </div>
-            <div class="product-managers__text-block">
-                <div class="product-managers__subtitle">
-                    <span class="text-block__span">Easier decision making for</span>
-                </div>
-                <div class="product-managers__title-holder">
-                    <h1 class="product-managers__title">Product Managers</h1>
-                </div>
-                <div class="product-managers__text-holder">
-                    <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </p>
-                </div>
-                <ul class="text-block__list">
-                    <li class="text-block__list-item">
-                        <span class="text-block__list-text">Never worry about overpaying for your energy again.</span>
-                    </li>
-                    <li class="text-block__list-item">
-                        <span class="text-block__list-text">We will only switch you to energy companies that we trust and will treat you right.</span>
-                    </li>
-                    <li class="text-block__list-item">
-                        <span class="text-block__list-text">We track the markets daily and know where the savings are.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
+        <section class="product-managers">
+            <div class=" container container-flex">
+                <div class="img-block">
+                    <img src="src/img/product-managers.jpg" alt="img">
+                </div>
+                <div class="text-block">
+                    <div class="text-block__title-holder">
+                        <span class="text-block__subtitle">Easier decision making for</span>
+                        <h1 class="text-block__title">Product Managers</h1>
+                    </div>
+                    <div class="text-block__text-holder">
+                        <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </p>
+                    </div>
+                    <ul class="text-block__list">
+                        <li class="text-block__list-item">
+                            <span class="text-block__list-text">Never worry about overpaying for your energy again.</span>
+                        </li>
+                        <li class="text-block__list-item">
+                            <span class="text-block__list-text">We will only switch you to energy companies that we trust and will treat you right.</span>
+                        </li>
+                        <li class="text-block__list-item">
+                            <span class="text-block__list-text">We track the markets daily and know where the savings are.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="marketers">
+            <div class="container container-flex">
+                <div class="text-block">
+                    <div class="text-block__title-holder">
+                        <span class="text-block__subtitle">Optimisation for</span>
+                        <h1 class="text-block__title">Marketers</h1>
+                    </div>
+                    <div class="text-block__text-holder">
+                        <p>Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. </p>
+                        <strong>Accessory makers</strong>
+                        <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun.</p>
+                        <strong>Alterationists</strong>
+                        <p>If you are looking for a new way to promote your business that won’t cost you more money.</p>
+                        <strong>Custom Design designers</strong>
+                        <p>If you are looking for a new way to promote your business that won’t cost you more money.</p>
+                    </div>
+                </div>
+                <div class="img-block">
+                    <img src="src/img/marketers.jpg" alt="img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <div class="container">
-            <span class="footer-line"></span>
-            <div class="footer-container">
-                <div class="logo">
+            <span class="footer__line"></span>
+            <div class="container-flex">
+                <div class="footer__logo">
                     <a href="#">
                         <img src="src/img/Logo.jpg" alt="logo">
                     </a>
                 </div>
                 <div>
-                    <span>Quick Links</span>
-                    <ul class="footer-list">
-                        <li class="footer-list-item"><a href="#">About Us</a></li>
-                        <li class="footer-list-item"><a href="#">Blog</a></li>
-                        <li class="footer-list-item"><a href="#">Contact</a></li>
-                        <li class="footer-list-item"><a href="#">FAQ</a></li>
+                    <div class="footer__text-holder">
+                        <span>Quick Links</span>
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">About Us</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Blog</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Contact</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">FAQ</a>
+                        </li>
                     </ul>
                 </div>
                 <div>
-                    <span>Legal Stuff</span>
-                    <ul class="footer-list">
-                        <li class="footer-list-item"><a href="#">Disclaimer</a></li>
-                        <li class="footer-list-item"><a href="#">Financing</a></li>
-                        <li class="footer-list-item"><a href="#">Privacy Policy</a></li>
-                        <li class="footer-list-item"><a href="#">Terms of Service</a></li>
+                    <div class="footer__text-holder">
+                        <span>Legal Stuff</span>
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Disclaimer</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Financing</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Terms of Service</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="form-block">
-                    <span>Knowing you're always on the best energy deal.</span>
+                <div class="footer__form-block">
+                    <div class="footer__text-holder">
+                        <span>Knowing you're always on the best energy deal.</span>
+                    </div>
                     <form action="#">
-                        <input class="footer-input" type="text" placeholder="Enter your phone Number">
-                        <button class="footer-button">Sign up Now</button>
+                        <input class="footer__input" type="text" placeholder="Enter your phone Number">
+                        <button class="footer__button button">Sign up Now</button>
                     </form>
                 </div>
             </div>
         </div>
     </footer>
-
-    
 </body>
 </html>
