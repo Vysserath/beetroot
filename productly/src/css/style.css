@@ -274,16 +274,13 @@ a {
     margin-bottom: 145px;
 }
 
-.footer .container-flex {
-    align-items: start;
+.footer .container{
+    padding-top: 100px;
+    border-top: 1px solid #bcd0e57f;
 }
 
-.footer__line {
-    display: block;
-    width: 100%;
-    background-color: rgba(188, 208, 229, 0.496913);
-    height: 1px;
-    margin-bottom: 120px;
+.footer .container-flex {
+    align-items: start;
 }
 
 .footer__text-holder {
