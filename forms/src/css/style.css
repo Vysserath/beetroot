@@ -74,6 +74,35 @@ h1 {
     margin-bottom: 7px;
 }
 
+.form__radiobutton {
+    display: none;
+}
+
+.form__radiolabel {
+    position: relative;
+    margin: 0 20px 0 28px;
+}
+
+.form__radiolabel::before {
+    content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: -25px;
+	bottom: 0;
+	background: url(../img/off.svg) 0 0 no-repeat;
+}
+
+.form__radiobutton:checked + label:before {
+	background: url(../img/on.svg) 0 0 no-repeat;
+}
+
+.form__radiolabel:hover:before {
+	filter: brightness(130%);
+    transition: ease-in-out 0.3s;
+}
+
 .form__input-select {
     background: url("../img/select.svg") no-repeat;
     background-position: 220px 11px;
@@ -150,34 +179,5 @@ h1 {
 .form__input:hover {  
     outline: none;  
     border: 1px solid #007BFF;
-    transition: ease-in-out 0.3s;
-}
-
-.form__radiobutton {
-    display: none;
-}
-
-.form__radiolabel {
-    position: relative;
-    margin: 0 20px 0 28px;
-}
-
-.form__radiolabel::before {
-    content: "";
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	left: -25px;
-	bottom: 0;
-	background: url(../img/off.svg) 0 0 no-repeat;
-}
-
-.form__radiobutton:checked + label:before {
-	background: url(../img/on.svg) 0 0 no-repeat;
-}
-
-.form__radiolabel:hover:before {
-	filter: brightness(130%);
     transition: ease-in-out 0.3s;
 }
