@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F2F2;;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+}
+
+input, select {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #1C1C1C;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 540px;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-flex_radio {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form__input-block{
+    margin-bottom: 20px;
+}
+
+.form__input {
+    width: 245px;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 22px;
+    padding-left: 10px;
+}
+
+.form__input-text {
+}
+
+.form__input-text-big {
+    width: 500px;
+    margin-bottom: 7px;
+}
+
+.form__input-select {
+    background: url("../img/select.svg") no-repeat;
+    background-position: 220px 11px;
+    -webkit-appearance: none;
+}
+
+.form__select-placeholder {
+    color: #545454;
+}
+
+.form__tipp-text {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.form__tipp-text_small {
+    display: block;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+}
+
+.form__radiolabel {
+    margin: 0 20px 0 8px;
+}
+
+.form__button {
+    display: block;
+    max-width: 480px;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #545454;
+    padding: 8px 10px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}
+
+.form__button:hover {
+    background-color: #ddf2fa;
+}
+
+.form__textholder {
+    text-align: center;
+}
+
+.form__textholder:last-child {
+    padding: 20px 0 10px;
+    border-top: 1px solid #E4E4E4;
+}
+
+.form__link {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #007BFF;
+}
+
+.form__link_big {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.form__input:focus {  
+    outline: none;  
+    border: 1px solid #007BFF;
+    /* background-color: red; */
+}
