@@ -33,6 +33,7 @@ h1 {
 }
 
 .container {
+    width: 100%;
     max-width: 540px;
     padding: 20px;
     background-color: #fff;
@@ -111,6 +112,11 @@ h1 {
     padding: 8px 10px;
     border: 1px solid #E4E4E4;
     border-radius: 6px;
+}
+
+.form__button_little {
+    max-width: 130px;
+
 }
 
 .form__button:hover {

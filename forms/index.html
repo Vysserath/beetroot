@@ -11,69 +11,119 @@
     <title>Forms</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Create an Account</h1>
-        <form class="form" action="">
-            <div class="container-flex">
+    <main>
+        <div class="container-flex">
+            <div class="container">
+                <h1>Create an Account</h1>
+                <form class="form" action="">
+                    <div class="container-flex">
+                        <div class="form__input-block">
+                            <span class="form__tipp-text">First Name</span>
+                            <input class="form__input form__input-text" type="text">
+                        </div>
+                        <div class="form__input-block">
+                            <span class="form__tipp-text">Last Name</span>
+                            <input class="form__input form__input-text" type="text">
+                        </div>
+                    </div>
+        
+                    <div class="form__input-block">
+                        <span class="form__tipp-text">E-mail</span>
+                        <input class="form__input form__input-text form__input-text-big" type="email">
+                        <span class="form__tipp-text_small">We'll never share your email with anyone else.</span>
+                    </div>
+        
+                    <div class="form__input-block">
+                        <div class="container-flex container-flex_radio">
+                            <input name="form__radio" type="radio" id="radio_1">
+                            <label class="form__radiolabel" for="radio_1">Male</label>
+                            <input name="form__radio" type="radio" id="radio_2">
+                            <label class="form__radiolabel" for="radio_2">Female</label>
+                        </div>
+                    </div>
+        
+                    <div class="container-flex">
+                        <div class="form__input-block">
+                            <span class="form__tipp-text">Country</span>
+                            <select class="form__input form__input-select" name="form__input-country">
+                                <option class="form__select-placeholder" value="" selected hidden>Select</option>
+                                <option value="usa">USA</option>
+                                <option value="england">England</option>
+                                <option value="germany">Deutschland</option>
+                                <option value="ukraine">Україна</option>
+                                <option value="russia">Россия</option>
+                            </select>
+                        </div>
+                        <div class="form__input-block">
+                            <span class="form__tipp-text">City</span>
+                            <input class="form__input form__input-text" type="text">
+                        </div>
+                    </div>
+                    
+                    <div class="form__input-block">
+                        <a href="#" class="form__button">Sign Up</a>
+                    </div>
+        
+                    <div class="form__textholder">
+                        <span class="form__tipp-text_small">
+                            By clicking the 'Sign Up' button, you confirm that you accept our <a class="form__link" href="#">Terms of Use</a> and <a class="form__link" href="#">Privacy Policy</a>.
+                        </span>
+                    </div>
+        
+                    <div class="form__textholder">
+                        <span class="form__tipp-text">
+                            Have an account? <a class="form__link form__link_big" href="#">Log In</a>.
+                        </span>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="container">
+                <div class="container-flex">
+                    <div class="form__input-block">
+                        <span class="form__tipp-text">Name</span>
+                        <input class="form__input form__input-text" type="text">
+                    </div>
+                    <div class="form__input-block">
+                        <span class="form__tipp-text">E-mail</span>
+                        <input class="form__input form__input-text" type="email">
+                    </div>
+                </div>
+
+                <div class="container-flex">
+                    <div class="form__input-block">
+                        <span class="form__tipp-text">Country</span>
+                        <select class="form__input form__input-select" name="form__input-country">
+                            <option class="form__select-placeholder" value="" selected hidden>Select</option>
+                            <option value="usa">USA</option>
+                            <option value="england">England</option>
+                            <option value="germany">Deutschland</option>
+                            <option value="ukraine">Україна</option>
+                            <option value="russia">Россия</option>
+                        </select>
+                    </div>
+                    <div class="form__input-block">
+                        <span class="form__tipp-text">City</span>
+                        <input class="form__input form__input-text" type="text">
+                    </div>
+                </div>
+
+                <div class="container-flex">
+                    <div class="form__input-block">
+                        <span class="form__tipp-text">Zip Code</span>
+                        <input class="form__input form__input-text" type="text">
+                    </div>
+                    <div class="form__input-block">
+                        <span class="form__tipp-text">Phone Number</span>
+                        <input class="form__input " type="tel">
+                    </div>
+                </div>
+
                 <div class="form__input-block">
-                    <span class="form__tipp-text">First Name</span>
-                    <input class="form__input form__input-text" type="text">
-                </div>
-                <div class="form__input-block">
-                    <span class="form__tipp-text">Last Name</span>
-                    <input class="form__input form__input-text" type="text">
+                    <a href="#" class="form__button form__button_little">Update</a>
                 </div>
             </div>
-
-            <div class="form__input-block">
-                <span class="form__tipp-text">E-mail</span>
-                <input class="form__input form__input-text form__input-text-big" type="email">
-                <span class="form__tipp-text_small">We'll never share your email with anyone else.</span>
-            </div>
-
-            <div class="form__input-block">
-                <div class="container-flex container-flex_radio">
-                    <input name="form__radio" type="radio" id="radio_1">
-                    <label class="form__radiolabel" for="radio_1">Male</label>
-                    <input name="form__radio" type="radio" id="radio_2">
-                    <label class="form__radiolabel" for="radio_2">Female</label>
-                </div>
-            </div>
-
-            <div class="container-flex">
-                <div class="form__input-block">
-                    <span class="form__tipp-text">Country</span>
-                    <select class="form__input form__input-select" name="form__input-country">
-                        <option class="form__select-placeholder" value="" selected hidden>Select</option>
-                        <option value="usa">USA</option>
-                        <option value="england">England</option>
-                        <option value="germany">Deutschland</option>
-                        <option value="ukraine">Україна</option>
-                        <option value="russia">Россия</option>
-                    </select>
-                </div>
-                <div class="form__input-block">
-                    <span class="form__tipp-text">City</span>
-                    <input class="form__input form__input-text" type="text">
-                </div>
-            </div>
-            
-            <div class="form__input-block">
-                <a href="#" class="form__button">Sign Up</a>
-            </div>
-
-            <div class="form__textholder">
-                <span class="form__tipp-text_small">
-                    By clicking the 'Sign Up' button, you confirm that you accept our <a class="form__link" href="#">Terms of Use</a> and <a class="form__link" href="#">Privacy Policy</a>.
-                </span>
-            </div>
-
-            <div class="form__textholder">
-                <span class="form__tipp-text">
-                    Have an account? <a class="form__link form__link_big" href="#">Log In</a>.
-                </span>
-            </div>
-        </form>
-    </div>
+        </div>
+    </main>
 </body>
 </html>
