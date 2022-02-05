@@ -32,6 +32,10 @@ a {
     margin-bottom: 20px;
 }
 
+.container__header_bold {
+    font-weight: bold;
+}
+
 .container {
     width: 100%;
     max-width: 540px;
