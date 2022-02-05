@@ -23,7 +23,7 @@ a {
     text-decoration: none;
 }
 
-h1 {
+.container__header {
     color: #1C1C1C;
     font-weight: 900;
     font-size: 24px;
@@ -47,9 +47,8 @@ h1 {
     justify-content: space-between;
 }
 
-.container-flex_radio {
+.container-flex_start {
     justify-content: flex-start;
-    align-items: center;
 }
 
 .form__input-block{
@@ -66,7 +65,7 @@ h1 {
     padding-left: 10px;
 }
 
-.form__input-text-big {
+.form__input_text-big {
     width: 500px;
     margin-bottom: 7px;
 }
@@ -89,6 +88,7 @@ h1 {
 	left: -25px;
 	bottom: 0;
 	background: url(../img/off.svg) 0 0 no-repeat;
+    cursor: pointer;
 }
 
 .form__radiobutton:checked + label:before {
@@ -104,6 +104,7 @@ h1 {
     background: url("../img/select.svg") no-repeat;
     background-position: 220px 11px;
     -webkit-appearance: none;
+    cursor: pointer;
 }
 
 .form__select-placeholder {
@@ -138,7 +139,13 @@ h1 {
 
 .form__button_little {
     max-width: 130px;
+}
 
+.form__button_tiny {
+    width: 30px;
+    height: 30px;
+    background: url("../img/trash.svg") no-repeat;
+    background-position: 7px 7px;
 }
 
 .form__button:hover {
@@ -177,4 +184,25 @@ h1 {
     outline: none;  
     border: 1px solid #007BFF;
     transition: ease-in-out 0.3s;
+}
+
+.form__input_file {
+    display: inline-block;
+    width: 138px;
+    height: 30px;
+    margin: 0 10px 7px 0;
+    padding: 6px 10px;
+    font-size: 13px;
+    line-height: 18px;
+    background: url("../img/camera.svg") no-repeat;
+    background-position: 114px 7px;
+    cursor: pointer;
+}
+
+.form__input_hidden {
+    display: none;
+}
+
+.form__img-holder {
+    margin-right: 20px;
 }

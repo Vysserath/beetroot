@@ -14,27 +14,27 @@
     <main>
         <div class="container-flex">
             <div class="container">
-                <h1>Create an Account</h1>
+                <h1 class="container__header">Create an Account</h1>
                 <form class="form" action="">
                     <div class="container-flex">
                         <div class="form__input-block">
                             <span class="form__tipp-text">First Name</span>
-                            <input class="form__input form__input-text" type="text">
+                            <input class="form__input form__input_text" type="text">
                         </div>
                         <div class="form__input-block">
                             <span class="form__tipp-text">Last Name</span>
-                            <input class="form__input form__input-text" type="text">
+                            <input class="form__input form__input_text" type="text">
                         </div>
                     </div>
         
                     <div class="form__input-block">
                         <span class="form__tipp-text">E-mail</span>
-                        <input class="form__input form__input-text form__input-text-big" type="email">
+                        <input class="form__input form__input_text form__input_text-big" type="email">
                         <span class="form__tipp-text_small">We'll never share your email with anyone else.</span>
                     </div>
         
                     <div class="form__input-block">
-                        <div class="container-flex container-flex_radio">
+                        <div class="container-flex container-flex_start">
                             <input class="form__radiobutton" name="form__radio" type="radio" id="radio_1">
                             <label class="form__radiolabel" for="radio_1">Male</label>
                             <input class="form__radiobutton" name="form__radio" type="radio" id="radio_2">
@@ -56,7 +56,7 @@
                         </div>
                         <div class="form__input-block">
                             <span class="form__tipp-text">City</span>
-                            <input class="form__input form__input-text" type="text">
+                            <input class="form__input form__input_text" type="text">
                         </div>
                     </div>
                     
@@ -79,49 +79,66 @@
             </div>
     
             <div class="container">
-                <div class="container-flex">
-                    <div class="form__input-block">
-                        <span class="form__tipp-text">Name</span>
-                        <input class="form__input form__input-text" type="text">
+                <form class="form" action="">
+                    <h2 class="container__header">Profile</h2>
+                    <div class="form__input-block container-flex_start container-flex">
+                        <div class="form__img-holder">
+                            <img class="form__img" src="src/img/avatar.png" alt="avatar">
+                        </div>
+                        <div class="form__input-block">
+                            <div class="container-flex_start container-flex">
+                                <input class="form__input form__input_hidden" type="file" id="input-file">
+                                <label class="form__input form__input_file" for="input-file">Upload Photo</label>
+                                <a href="#" class="form__button form__button_tiny"></a>
+                            </div>
+                            <span class="form__tipp-text_small">Up to 1 MB (300x300 px)</span>
+                        </div>
                     </div>
-                    <div class="form__input-block">
-                        <span class="form__tipp-text">E-mail</span>
-                        <input class="form__input form__input-text" type="email">
-                    </div>
-                </div>
 
-                <div class="container-flex">
-                    <div class="form__input-block">
-                        <span class="form__tipp-text">Country</span>
-                        <select class="form__input form__input-select" name="form__input-country">
-                            <option class="form__select-placeholder" value="" selected hidden>Select</option>
-                            <option value="usa">USA</option>
-                            <option value="england">England</option>
-                            <option value="germany">Deutschland</option>
-                            <option value="ukraine">Україна</option>
-                            <option value="russia">Россия</option>
-                        </select>
+                    <div class="container-flex">
+                        <div class="form__input-block">
+                            <span class="form__tipp-text">Name</span>
+                            <input class="form__input form__input_text" type="text">
+                        </div>
+                        <div class="form__input-block">
+                            <span class="form__tipp-text">E-mail</span>
+                            <input class="form__input form__input_text" type="email">
+                        </div>
                     </div>
-                    <div class="form__input-block">
-                        <span class="form__tipp-text">City</span>
-                        <input class="form__input form__input-text" type="text">
+    
+                    <div class="container-flex">
+                        <div class="form__input-block">
+                            <span class="form__tipp-text">Country</span>
+                            <select class="form__input form__input-select" name="form__input-country">
+                                <option class="form__select-placeholder" value="" selected hidden>Select</option>
+                                <option value="usa">USA</option>
+                                <option value="england">England</option>
+                                <option value="germany">Deutschland</option>
+                                <option value="ukraine">Україна</option>
+                                <option value="russia">Россия</option>
+                            </select>
+                        </div>
+                        <div class="form__input-block">
+                            <span class="form__tipp-text">City</span>
+                            <input class="form__input form__input_text" type="text">
+                        </div>
                     </div>
-                </div>
-
-                <div class="container-flex">
-                    <div class="form__input-block">
-                        <span class="form__tipp-text">Zip Code</span>
-                        <input class="form__input form__input-text" type="text">
+    
+                    <div class="container-flex">
+                        <div class="form__input-block">
+                            <span class="form__tipp-text">Zip Code</span>
+                            <input class="form__input form__input_text" type="text">
+                        </div>
+                        <div class="form__input-block">
+                            <span class="form__tipp-text">Phone Number</span>
+                            <input class="form__input " type="tel">
+                        </div>
                     </div>
+    
                     <div class="form__input-block">
-                        <span class="form__tipp-text">Phone Number</span>
-                        <input class="form__input " type="tel">
+                        <a href="#" class="form__button form__button_little">Update</a>
                     </div>
-                </div>
-
-                <div class="form__input-block">
-                    <a href="#" class="form__button form__button_little">Update</a>
-                </div>
+                </form>
             </div>
         </div>
     </main>
