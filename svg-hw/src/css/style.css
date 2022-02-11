@@ -1,3 +1,12 @@
+/* mixin usage */
+/*--------------------------------
+	Responsive ratio
+	Used for creating scalable elements that maintain the same ratio
+	example:
+	.element {
+		@include responsive-ratio(400, 300);
+	}
+*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,9 +16,14 @@ body {
   margin: 0;
   padding: 0;
   color: #16133D;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
   line-height: 28px;
+}
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 h1 {
@@ -89,16 +103,21 @@ img {
   letter-spacing: 0.2px;
 }
 .services__card {
-  max-width: 360px;
-  width: 100%;
+  width: calc((100% / 3) - 20px);
   padding: 41px;
   border: 1px solid #E5EAF4;
   border-radius: 8px;
   -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
+  margin: 0 10px 20px;
 }
 .services__card:hover {
   border: 1px solid #3DB370;
+}
+@media (max-width: 767px) {
+  .services__card {
+    width: calc(50% - 20px);
+  }
 }
 .services__img-holder {
   position: relative;

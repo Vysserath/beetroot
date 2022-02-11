@@ -1,3 +1,5 @@
+@import "mixins";
+
 * {
     box-sizing: border-box;
     // margin: 0;
@@ -7,9 +9,13 @@ body {
     margin: 0;
     padding: 0;
     color: #16133D;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
     line-height: 28px;
+
+    @include breakpoint("md") {
+        font-size: 16px;
+    }
 }
 
 h1 {
@@ -100,15 +106,18 @@ img {
     }
 
     &__card {
-        max-width: 360px;
-        width: 100%;
+        width: calc((100% / 3) - 20px);
         padding: 41px;
         border: 1px solid #E5EAF4;
         border-radius: 8px;
         transition: ease-in-out 0.2s;
-
+        margin: 0 10px 20px;        
         &:hover {
             border: 1px solid #3DB370;
+        }
+
+        @include breakpoint(md) {
+            width: calc(50% - 20px);
         }
     }
 
