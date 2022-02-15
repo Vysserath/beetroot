@@ -39,7 +39,53 @@ h1 {
 }
 
 .header {
-    padding-top: 20px;
+    @include breakpoint(md) {
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        background-color: #fff;
+    }
+
+    .container {
+
+        @include breakpoint(md) {
+            padding: 20px 20px 0;
+            position: relative;
+        }
+    }
+
+    &.active {
+        nav {
+            transform: translateX(0);
+        }
+
+        .nav-opener {
+            span {
+                width: 0;
+            }
+
+            &::before {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+                background-color: tomato;
+            }
+
+            &::after {
+                bottom: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                background-color: tomato;
+            }
+        }
+    }
+
+}
+
+.main {
+    @include breakpoint(md) {
+        padding-top: 55px;
+    }
 }
 
 .container {
@@ -48,10 +94,9 @@ h1 {
     margin: 0 auto;
     padding: 0 20px 0;
 
-    // @include breakpoint(md) {
-    //     display: flex;
-
-    // }
+    @include breakpoint(md) {
+        position: relative;
+    }
 
     &_flex {
         display: flex;
@@ -99,16 +144,34 @@ h1 {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+
+        @include breakpoint(md) {
+            display: flex ;
+            flex-direction: column;
+            margin: 0 0 20px;
+            width: 100%;
+        }
     }
 
     &__item {
         font-size: 14px;
         line-height: 28px;
         margin-right: 25px;
-    }
 
-    &__item a {
-        color: $black-dark;
+        @include breakpoint(md) {
+            padding: 0;
+            width: 100%;
+        }
+
+        a {
+            color: $black-dark;
+
+            @include breakpoint(md) {
+                display: block;
+                text-align: center;
+                padding: 10px;
+            }
+        }
     }
 
     &__buttons {
@@ -116,6 +179,93 @@ h1 {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+
+        @include breakpoint(md) {
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        li {
+            @include breakpoint(md) {
+                width: 100%;
+                margin: 0 0 20px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    @include breakpoint(md) {
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        padding: 20px 0;
+        z-index: 2;
+        background-color: #fff;
+        transform: translateX(100%);
+        transition: all ease-in-out 0.3s;
+    }
+}
+
+.nav-opener {
+    display: none;
+
+    @include breakpoint(md) {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 30px; 
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    &::before {
+        content: "";
+        width: 40px;
+        height: 2px;
+        border-radius: 4px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #2f281e;
+        transition: all ease-in-out 0.3s;
+    }
+
+    &::after {
+        content: "";
+        width: 40px;
+        height: 2px;
+        border-radius: 4px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #2f281e;
+        transition: all ease-in-out 0.3s;
+    }
+
+    span {
+        width: 40px;
+        height: 2px;
+        border-radius: 4px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #2f281e;
+        transition: all ease-in-out 0.3s;
     }
 }
 
