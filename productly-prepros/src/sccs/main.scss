@@ -287,6 +287,10 @@ h1 {
         margin: 15px 0 15px 30px;
         font-weight: 600;
 
+        @include breakpoint(md) {
+            margin-bottom: -20px;
+        }
+
         &:hover {
             background-color: $blue-light !important;
         }
@@ -296,6 +300,10 @@ h1 {
         padding: 11px 25px;
         margin: 15px;
         font-weight: 600;
+
+        @include breakpoint(md) {
+            margin-left: 50px;
+        }
     }
 
     &:hover {

@@ -338,6 +338,11 @@ h1 {
   margin: 15px 0 15px 30px;
   font-weight: 600;
 }
+@media (max-width: 767px) {
+  .button_nav-white {
+    margin-bottom: -20px;
+  }
+}
 .button_nav-white:hover {
   background-color: #BCD0E5 !important;
 }
@@ -345,6 +350,11 @@ h1 {
   padding: 11px 25px;
   margin: 15px;
   font-weight: 600;
+}
+@media (max-width: 767px) {
+  .button_nav-orange {
+    margin-left: 50px;
+  }
 }
 .button:hover {
   background-color: #ff5d2c;
@@ -544,3 +554,4 @@ h1 {
       -ms-flex-align: start;
           align-items: start;
 }
+/*# sourceMappingURL=main.css.map */
