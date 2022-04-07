@@ -1,7 +1,7 @@
 let name;
 let fullName;
 let person;
-let _name;
+let userName;
 
 // let @name;
 
