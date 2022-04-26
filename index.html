@@ -5,11 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
+    <link rel="stylesheet" href="src/css/main.css">
 </head>
 <body>
-    <script>
-        let test;
-    </script>
+    <div class="container">
+        <div id="list">
+
+        </div>
+        <div class="open">
+            <button class="btn btn_open">Open</button>
+            <div class="modal">
+                <p class="modal__text">Lorem ipsum dolor sit amet.</p>
+                <button class="btn btn_close">Close</button>
+            </div>
+        </div>
+        <div class="traffic">
+            <div class="traffic__body">
+                <div class="traffic__color traffic__color_red active"></div>
+                <div class="traffic__color traffic__color_yellow"></div>
+                <div class="traffic__color traffic__color_green"></div>
+            </div>
+            <button class="btn btn_color">Change color</button>
+        </div>
+    </div>
     <script src="src/js/lesson.js"></script>
 </body>
 </html>
