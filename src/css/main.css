@@ -4,101 +4,73 @@
 }
 
 body {
-  font-size: 20px;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
-  background-color: #d9ffd9;
+  font-family: "Radio Canada", sans-serif;
+  background-color: #fbfcdb;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container {
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px;
+  margin-bottom: 25px;
 }
 
-.list {
-  width: calc(100% / 3);
+.main {
+  margin-bottom: 50px;
 }
 
-.open {
-  width: calc(100% / 3);
-  padding: 0 15px;
+.img-holder {
+  width: 50%;
+}
+.img-holder_little {
+  padding: 0 10px;
+  width: 25%;
 }
 
-.btn {
-  min-width: 120px;
-  position: relative;
-  display: inline-block;
-  padding: 10px 15px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 20px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  border: 5px solid #2ecc71;
-  color: #2ecc71;
-}
-.btn:hover {
-  background-color: #29b765;
-  border: 5px solid #40d47e;
-  color: #ecf0f1;
-  cursor: pointer;
-}
-.btn_open {
-  margin: 0 0 20px 15px;
-}
-
-.modal {
-  border: darkgreen solid 2px;
+.img {
   border-radius: 10px;
-  padding: 15px;
-  opacity: 0;
-  -webkit-transition: ease-in-out all 0.15s;
-  transition: ease-in-out all 0.15s;
+}
+.img_main {
+  border-radius: 20px;
 }
 
-.traffic {
-  width: calc(100% / 3);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.text-block {
+  width: 50%;
+  padding-left: 30px;
 }
-.traffic__body {
-  background-color: #000;
-  padding: 20px;
-  border-radius: 20px;
-  margin-right: 50px;
+.text-block__list {
+  margin: 0 0 30px 0;
+  padding: 0;
+  list-style: none;
 }
-.traffic__color {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  margin-bottom: 10px;
-  opacity: 0.5;
-  -webkit-transition: ease-in-out all 0.15s;
-  transition: ease-in-out all 0.15s;
+.text-block__list-item {
+  margin-bottom: 5px;
 }
-.traffic__color_red {
-  background-color: #ff2222;
-}
-.traffic__color_yellow {
-  background-color: #ffff2a;
-}
-.traffic__color_green {
-  background-color: #66ff00;
-}
-.traffic .active {
-  opacity: 1;
+.text-block__link {
+  text-decoration: none;
+  background-color: #5656ea;
+  color: #fbfcdb;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 20px;
 }

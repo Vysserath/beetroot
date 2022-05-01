@@ -1,87 +1,39 @@
-//1 Створити сторінку, що показує нумерований список пісень:
-
-var playList = [
-    {
-     author: "LED ZEPPELIN",
-     song:"STAIRWAY TO HEAVEN"
-    },
-    {
-    author: "QUEEN",
-    song:"BOHEMIAN RHAPSODY"
-    },
-    {
-    author: "LYNYRD SKYNYRD",
-    song:"FREE BIRD"
-    },
-    {
-    author: "DEEP PURPLE",
-    song:"SMOKE ON THE WATER"
-    },
-    {
-    author: "JIMI HENDRIX",
-    song:"ALL ALONG THE WATCHTOWER"
-    },
-    {
-    author: "AC/DC",
-    song:"BACK IN BLACK"
-    },
-    {
-    author: "QUEEN",
-    song:"WE WILL ROCK YOU"
-    },
-    {
-    author: "METALLICA",
-    song:"ENTER SANDMAN"
-    }];
+const main = document.querySelector('.main');
+const images = document.querySelector('#images-container');
 
 
-let list = document.getElementById('list');
-let ol = document.createElement('ol');
+fetch('https://dummyjson.com/products/2').then((response) => {
+    return response.json();
+}).then((data) => {
+    let template = `
+    <div class="container">
+        <div class="img-holder">
+            <img src="${data.thumbnail}" alt="" class="img img_main">
+        </div>
+        <div class="text-block">
+            <h1 class="text-block__title">${data.title}</h1>
+            <ul class="text-block__list">
+                <li class="text-block__list-item">Brand: <a href="#">${data.brand}</a></li>
+                <li class="text-block__list-item">Price: ${data.price}$</li>
+                <li class="text-block__list-item">Rating: ${data.rating}</li>
+                <li class="text-block__list-item">Categoty: <a href="#">${data.category}</a></li>
+                <li class="text-block__list-item">Description: ${data.description}</li>
+            </ul>
+            <div class="link-holder">
+                <a href="#" class="text-block__link">Buy</a>
+            </div>
+        </div>
+    </div>`
 
-for (i in playList) {
-    ol.innerHTML += '<li>' + playList[i].author + ' - ' + playList[i].song +'</li>';
-    list.append(ol);
-}
+    main.insertAdjacentHTML('afterbegin', template);
 
-//2 Створити HTML-сторінку з кнопкою "Відкрити" і модальним вікном. На модальном вікні повинен бути текст і кнопка "Закрити". Спочатку модальне вікно не відображається. При кліку на кнопку "Відкрити" з'являється модальне вікно, на кнопку "Закрити" — зникає.
+    data.images.map((i) => {
+        let templateImg = `
+        <div class="img-holder img-holder_little">
+            <img src="${i}" alt="" class="img">
+        </div>`
 
-let open = document.querySelector('.btn_open');
-let close = document.querySelector('.btn_close');
-let modal = document.querySelector('.modal');
+        images.insertAdjacentHTML('beforeend', templateImg);
+    })
 
-open.onclick = function() {
-    modal.style.opacity = '1';
-}
-
-close.onclick = function() {
-    modal.style.opacity = '0';
-}
-
-//3 Створити HTML-сторінку зі світлофором і кнопкою, яка перемикає світлофор на наступний колір.
-
-let color = document.querySelector('.btn_color');
-let red = document.querySelector('.traffic__color_red');
-let green = document.querySelector('.traffic__color_green');
-let yellow = document.querySelector('.traffic__color_yellow');
-let pastColor;
-
-color.onclick = function() {
-    if (red.classList.contains('active')) {
-        red.classList.remove('active');
-        pastColor = 'red';
-        yellow.classList.add('active');
-    }
-    else if (green.classList.contains('active')) {
-        green.classList.remove('active');
-        pastColor = 'green';
-        yellow.classList.add('active');
-    }
-    else if (yellow.classList.contains('active') && pastColor == 'green') {
-        yellow.classList.remove('active');
-        red.classList.add('active');
-    }
-    else if (yellow.classList.contains('active')  && pastColor == 'red') {
-        yellow.classList.remove('active');
-        green.classList.add('active');
-    }
-}
+})

@@ -3,95 +3,73 @@
 }
 
 body {
-    font-size: 20px;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(217, 255, 217);
+    font-family: 'Radio Canada', sans-serif;
+    background-color: #fbfcdb;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .container {
+    padding: 0 20px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 15px;
+    margin-bottom: 25px;
 }
 
-.list {
-    width: calc(100% / 3);
+.main {
+    margin-bottom: 50px;
 }
 
-.open {
-    width: calc(100% / 3);
-    padding: 0 15px;
-}
+.img-holder {
+    width: 50%;
 
-.btn {
-    min-width: 120px;
-    position: relative;
-    display: inline-block;
-    padding: 10px 15px;
-    text-transform: uppercase; 
-    font-weight: 600;  
-    font-size: 20px;
-    transition: 0.5s;
-    border: 5px solid #2ecc71; 
-    color: #2ecc71;
-
-    &:hover {
-        background-color: darken(#2ecc71, 5%);
-        border: 5px solid lighten(#2ecc71, 5%);
-        color: #ecf0f1;
-        cursor: pointer;
-    }
-    &_open {
-        margin: 0 0 20px 15px;
+    &_little {
+        padding: 0 10px;
+        width: 25%;
     }
 }
 
-.modal {
-    border: darkgreen solid 2px;
+.img {
     border-radius: 10px;
-    padding: 15px;
-    opacity: 0;
-    transition: ease-in-out all 0.15s;
+
+		&_main {
+            border-radius: 20px;
+		}
 }
 
-.traffic {
-    width: calc(100% / 3);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.text-block {
+    width: 50%;
+    padding-left: 30px;
 
-		&__body {
-            background-color: #000;
-            padding: 20px;
-            border-radius: 20px;
-            margin-right: 50px;
+		&__list {
+            margin: 0 0 30px 0;
+            padding: 0;
+            list-style: none;
 		}
 
-		&__color {
-            width: 40px;
-            height: 40px;
-            border-radius: 20px;
-            margin-bottom: 10px;
-            opacity: 0.5;
-            transition: ease-in-out all 0.15s;
-
-			&_red {
-                background-color: #ff2222;
-			}
-
-			&_yellow {
-                background-color: #ffff2a;
-			}
-
-			&_green {
-                background-color: #66ff00;
-			}
+		&__list-item {
+            margin-bottom: 5px;
 		}
 
-        .active {
-            opacity: 1;
-        }
+		&__link {
+            text-decoration: none;
+            background-color: #5656ea;
+            color: #fbfcdb;
+            padding: 10px 30px;
+            border-radius: 5px;
+            font-size: 20px;
+		}
 }
