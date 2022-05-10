@@ -6,17 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="src/css/main.css">
-    <title>JS</title>
+    <title>Puma</title>
 </head>
+
 <body>
-    <section class="main">
-        <div id="images-container" class="container">
-
+    <header class="header">
+        <div class="container container_flex">
+            <div class="header__wrapper">
+                <div class="header__logo-holder">
+                    <a href="#" class="header__logo-link">
+                        <img src="src/img/logo.svg" alt="logo" class="header__logo">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a href="#" class="header__list-link">Menu</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header__list-link">About</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header__list-link">Feature</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header__list-link">Gallery</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="#" class="header__btn btn">Buy now</a>
         </div>
-    </section>
+    </header>
 
+    <main class="main">
+        <section class="life">
+            <div class="container container_flex">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="life__text-block">
+                                <h1 class="life__title">Life is better in running shoes.1</h1>
+                                <div class="life__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices</p>
+                                </div>
+                            </div>
+                            <div class="life__img-block">
+                                <img src="src/img/shoes.jpg" alt="img" class="life__img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="life__text-block">
+                                <h1 class="life__title">Life is better in running shoes.2</h1>
+                                <div class="life__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices</p>
+                                </div>
+                            </div>
+                            <div class="life__img-block">
+                                <img src="src/img/shoes.jpg" alt="img" class="life__img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="life__text-block">
+                                <h1 class="life__title">Life is better in running shoes.3</h1>
+                                <div class="life__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices</p>
+                                </div>
+                            </div>
+                            <div class="life__img-block">
+                                <img src="src/img/shoes.jpg" alt="img" class="life__img">
+                            </div>
+                        </div>
+                    </div>                
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="container container_flex">
+                <div class="video__text-block">
+                    <span class="video__subtitle">Video</span>
+                    <h2 class="video__title">Desire the feel of satisfaction.</h2>
+                    <div class="video__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices commauris risus.</p>
+                    </div>
+                </div>
+                <div class="video__video-block">
+                    <iframe src="https://www.youtube.com/embed/HSsExbzYuCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="src/js/lesson.js"></script>
 </body>
 </html>

@@ -4,73 +4,182 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Radio Canada", sans-serif;
-  background-color: #fbfcdb;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
+  color: #1A0A03;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: black;
-  text-transform: capitalize;
+  color: #fff;
 }
 
 img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  display: block;
 }
 
 .container {
+  max-width: 1180px;
   padding: 0 20px;
+  margin: 0 auto;
+}
+.container_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  padding: 40px 0 32px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1.14%, rgba(238, 85, 20, 0.1)), to(rgba(238, 85, 20, 0)));
+  background: linear-gradient(90deg, rgba(238, 85, 20, 0.1) 1.14%, rgba(238, 85, 20, 0) 100%);
+}
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo-holder {
+  padding-right: 100px;
+}
+.header__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 25px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
-.main {
-  margin-bottom: 50px;
+.header__list-item {
+  padding-right: 40px;
 }
-
-.img-holder {
-  width: 50%;
+.header__list-link {
+  color: #1A0A03;
+  opacity: 0.7;
 }
-.img-holder_little {
-  padding: 0 10px;
-  width: 25%;
-}
-
-.img {
-  border-radius: 10px;
-}
-.img_main {
-  border-radius: 20px;
-}
-
-.text-block {
-  width: 50%;
-  padding-left: 30px;
-}
-.text-block__list {
-  margin: 0 0 30px 0;
-  padding: 0;
-  list-style: none;
-}
-.text-block__list-item {
-  margin-bottom: 5px;
-}
-.text-block__link {
-  text-decoration: none;
-  background-color: #5656ea;
-  color: #fbfcdb;
-  padding: 10px 30px;
+.header__btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  display: block;
+  padding: 15px 30px;
+  background-color: #EE5514;
   border-radius: 5px;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+.header__btn:hover {
+  opacity: 0.4;
+}
+
+.life {
+  background: -webkit-gradient(linear, left top, right top, color-stop(1.14%, rgba(238, 85, 20, 0.1)), to(rgba(238, 85, 20, 0)));
+  background: linear-gradient(90deg, rgba(238, 85, 20, 0.1) 1.14%, rgba(238, 85, 20, 0) 100%);
+}
+.life__text-block {
+  width: 35%;
+}
+.life__img-block {
+  width: 50%;
+}
+.life__title {
+  font-family: "Source Serif Pro", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 61px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+.life__text {
+  line-height: 160%;
+  opacity: 0.7;
+}
+.video__text-block {
+  width: 35%;
+}
+.video__video-block {
+  background-image: url("../img/back.png");
+  background-position: 50px -50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
+}
+.video__subtitle {
+  display: block;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
   font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color: #EE5514;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.video__title {
+  font-family: "Source Serif Pro", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 130%;
+}
+.video__text {
+  line-height: 160%;
+  opacity: 0.7;
+}
+.video iframe {
+  display: block;
+  height: 325px;
+  width: 100%;
+  padding: 50px 50px 0 0;
+}
+
+.swiper-slide {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiper-button-next {
+  color: #1A0A03;
+  background: rgba(238, 85, 20, 0.1);
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
 }

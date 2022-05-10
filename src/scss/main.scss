@@ -3,73 +3,198 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Radio Canada', sans-serif;
-    background-color: #fbfcdb;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    color: #1A0A03;
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
-    color: black;
-    text-transform: capitalize;
+    color: #fff;
 }
 
 img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: block;
 }
 
 .container {
+    max-width: 1180px;
     padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-}
+    margin: 0 auto;
 
-.main {
-    margin-bottom: 50px;
-}
-
-.img-holder {
-    width: 50%;
-
-    &_little {
-        padding: 0 10px;
-        width: 25%;
+    &_flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
-.img {
-    border-radius: 10px;
+.header {
+    padding: 40px 0 32px;
+    background: linear-gradient(90deg, rgba(238, 85, 20, 0.1) 1.14%, rgba(238, 85, 20, 0) 100%);
 
-		&_main {
-            border-radius: 20px;
-		}
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo-holder {
+        padding-right: 100px;
+    }
+
+    &__logo-link {
+    }
+
+    &__logo {
+    }
+
+    &__nav {
+
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__list-item {
+        padding-right: 40px;
+    }
+
+    &__list-link {
+        color: #1A0A03;
+        opacity: 0.7;
+    }
+
+    &__btn {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 160%;
+        display: block;
+        padding: 15px 30px;
+        background-color: #EE5514;
+        border-radius: 5px;
+        transition: ease-in-out 0.3s;
+
+        &:hover {
+            opacity: 0.4;
+        }
+    }
 }
 
-.text-block {
-    width: 50%;
-    padding-left: 30px;
+.btn {
+}
 
-		&__list {
-            margin: 0 0 30px 0;
-            padding: 0;
-            list-style: none;
-		}
 
-		&__list-item {
-            margin-bottom: 5px;
-		}
 
-		&__link {
-            text-decoration: none;
-            background-color: #5656ea;
-            color: #fbfcdb;
-            padding: 10px 30px;
-            border-radius: 5px;
-            font-size: 20px;
-		}
+.life {
+    background: linear-gradient(90deg, rgba(238, 85, 20, 0.1) 1.14%, rgba(238, 85, 20, 0) 100%);
+
+    &__text-block {
+        width: 35%;
+    }
+
+    &__img-block {
+        width: 50%;
+    }
+    
+    &__title {
+        font-family: 'Source Serif Pro', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 61px;
+        line-height: 120%;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        line-height: 160%;
+        opacity: 0.7;
+    }
+
+
+
+    &__img {
+    }
+}
+
+.video {
+
+    &__text-block {
+        width: 35%;
+    }
+
+    &__video-block {
+        background-image: url('../img/back.png');
+        background-position: 50px -50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 50%;
+    }
+
+    &__subtitle {
+        display: block;
+        font-family: 'Source Serif Pro', serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        color: #EE5514;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-family: 'Source Serif Pro', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 130%;
+    }
+
+    &__text {
+        line-height: 160%;
+        opacity: 0.7;
+    }
+
+    iframe {
+        display: block;
+        height: 325px;
+        width: 100%;
+        padding: 50px 50px 0 0;
+    }
+}
+
+.swiper-slide{
+    justify-content: space-between;
+    display: flex;
+}
+
+.swiper-button-next {
+    color: #1A0A03;
+    background: rgba(238, 85, 20, 0.1);
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+.footer {
 }
